@@ -3,6 +3,11 @@ PointAR is a concept app showcasing the use of Augmented Reality to assist the f
 
 ![In-app screenshot](https://i.imgur.com/i0LAJia.jpg)
 
+## Acknowledgements
+James Culley ([@LDE_iGuru](https://twitter.com/LDE_iGuru)) for conceptualizing the idea.
+
+Tadas Sadauskas ([@Tadas_Sadauskas](https://twitter.com/Tadas_Sadauskas)) for the 3D animation and translations.
+
 ## Markers
 The app was developed with the following 2 signs in mind:
 
