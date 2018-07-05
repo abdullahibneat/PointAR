@@ -1,5 +1,5 @@
 # PointAR
-PointAR is a concept app showcasing the use of Augmented Reality to assist the foreign workforce with the induction process through the use of 3D animation for visualisation and built-in translations.
+PointAR is a concept app showcasing the use of Augmented Reality to assist the foreign workforce with the induction process through the use of 3D animation for visualisation and built-in translations. Check out the app on the [Google Play Store](https://play.google.com/store/apps/details?id=com.abdu.PointAR).
 
 ![In-app screenshot](https://i.imgur.com/i0LAJia.jpg)
 
