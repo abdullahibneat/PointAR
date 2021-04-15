@@ -18,6 +18,7 @@ public class translate : MonoBehaviour
 
     void Start()
     {
+        SondaManager.inserisciSonda("translate.Start");
         // Create new event - On dropdown value change
         myDropdown.onValueChanged.AddListener(delegate {
             myDropdownValueChangedHandler(myDropdown);
@@ -28,15 +29,17 @@ public class translate : MonoBehaviour
     {
         // Destroy event as soon as user quits the app
         myDropdown.onValueChanged.RemoveAllListeners();
+        SondaManager.inserisciSonda("translate.Destroy");
     }
 
     // When dropdown value changes
     private void myDropdownValueChangedHandler(Dropdown target)
     {
-
+        SondaManager.inserisciSonda("translate.myDropdownValueChangedHandler");
         // If "English" is selected
         if (target.value == 0)
         {
+            SondaManager.inserisciSonda("translate.myDropdownValueChangedHandler.if (target.value == 0)");
             // Hide translated signage
             LIFTItalian.SetActive(false);
             LIFTLithuanian.SetActive(false);
@@ -49,6 +52,7 @@ public class translate : MonoBehaviour
         // If "Italian" is selected
         if (target.value == 1)
         {
+            SondaManager.inserisciSonda("translate.myDropdownValueChangedHandler.if (target.value == 1)");
             // Hide non-Italian signage
             // (The English sign is the marker itself, thus the Italian signage will be displayed as an overlay)
             LIFTItalian.SetActive(true);
@@ -62,6 +66,7 @@ public class translate : MonoBehaviour
         // If "Lithuanian" is selected
         if (target.value == 2)
         {
+            SondaManager.inserisciSonda("translate.myDropdownValueChangedHandler.if (target.value == 2)");
             // Hide non-Lithuanian signage
             LIFTItalian.SetActive(false);
             LIFTLithuanian.SetActive(true);
@@ -74,6 +79,7 @@ public class translate : MonoBehaviour
         // If "Urdu" is selected
         if (target.value == 3)
         {
+            SondaManager.inserisciSonda("translate.myDropdownValueChangedHandler.if (target.value == 3)");
             // Hide non-Urdu signage
             LIFTItalian.SetActive(false);
             LIFTLithuanian.SetActive(false);
@@ -83,10 +89,12 @@ public class translate : MonoBehaviour
             FALLUrdu.SetActive(true);
         }
     }
-
+    
     // Set the index for each value in the dropdown
     public void SetDropdownIndex(int index)
     {
         myDropdown.value = index;
+        SondaManager.inserisciSonda("translate.SetDropdownIndex");
     }
+    
 }

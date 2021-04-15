@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12,15 +13,16 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
+    vuforiaLicenseKey: AQg9le7/////AAABmRXrrwi43033sxYOoEmWpk4lQSkTq3gO9RVnNyPR+xpmGI2ZDW5BNKRj6P5W0rPzsFgIN4nkxaG1t5umo/Jj/zr5jdeI8rkGHw6CqFolRPCrl9eBsI+lFp2eCPD8qaksu9lu3VkcwNug6JlzcFuZNJROJPB7ELUSXJEXCz0IZ6OXWNNDsoodCNfl/RyWOeyZjvSDOooVllPFxu/cH/02Rm85B6pIYe3ufLTH6QiRztKI8UAljqrxQJ2/jd9UHHcxaqpPJ1rkF9AK6XvqvJMX5FY1IuuxuA9qz5r5WcUrcrn1VxnyL52VbOedyShPKOHcaraVL1FsOQbPVmHczYynieFhAYCWp7ToZQZfrLeIycSh
     ufoLicenseKey: QWZscUpnNy8vLy8vQUFBQUtOQURXak50YjBxenMyNkVtSDRJc0Q1WWtPUnJnSVBlbVQxOElGT2E2WUVHa2laUk9jL3NyQmxjM0M1bFM4VUFWMWtLV2hoN3RVUkhWQUM2RHFwU0NHaVlrRjM3VGZ0OEcyRFVudHNUU2xKVzB0czJIQVIzWVVnM0RvWXJQR2lWVTdZZ2pLVytxUGRJYjlVS1dncWVNaTZTV01qYVVsNk1vQ0MyaGNuRFZEa0Nkdk8wNDJOWTVudG5UNUUrV0ovdDFmNzlVdGRGVnRLU0Yra1hRWXRWZlA0LzZqaGJSdzY1dk9naTd5K3d5T2FjOEVOc0pSQ1VJMHh0cHpqazlQUHNWMWMxNU1LeWVRU2lVNGtBR3YveWJNRUtPc2pRa3paMzdGSk53RTZsSTZJdW15Y0c0b0o5c2tDaU9icTMweC9sbHdPNEcycTl3RkpXa0JaUjRsOTlkcnFYNlZwRmtnaWlRdW1WVStoT1BXcFE=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
-    cameraDirection: 0
-    mirrorVideoBackground: 0
+    modelTargetRecoWhileExtendedTracked: 1
+    version: 8.3.8
+    eulaAcceptedVersions: '{"Values":["8.1","8.5","9.5","8.3"]}'
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
@@ -42,16 +44,19 @@ MonoBehaviour:
       DistortionCoefficients: {x: 0, y: 0}
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
+  database:
+    disableModelExtraction: 0
   videoBackground:
     clippingMode: 0
     numDivisions: 2
-    videoBackgroundShader: {fileID: 15311, guid: 0000000000000000f000000000000000,
-      type: 0}
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
     matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
+    arcoreRequirement: 0
     trackingMode: 0
     posePrediction: 0
     modelCorrectionMode: 0
@@ -62,6 +67,5 @@ MonoBehaviour:
     autoStartTracker: 0
   webcam:
     deviceNameSetInEditor: 
-    flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30
