@@ -14,6 +14,8 @@ public class AutoFocus : MonoBehaviour {
 
     void Start()
     {
+        SondaManager.inserisciSonda("AutoFocus.Start");
+
         // Get the Vuforia instance of the app
         var vuforia = VuforiaARController.Instance;
 
@@ -27,6 +29,8 @@ public class AutoFocus : MonoBehaviour {
     // As soon as Vuforia is initialized
     private void OnVuforiaStarted()
     {
+        SondaManager.inserisciSonda("AutoFocus.OnVuforiaStarted");
+
         // Override FocusMode
         CameraDevice.Instance.SetFocusMode(
 
@@ -37,9 +41,11 @@ public class AutoFocus : MonoBehaviour {
     // When Vuforia is paused
     private void OnPaused(bool paused)
     {
+        SondaManager.inserisciSonda("AutoFocus.OnPaused");
         // When it's resumed
         if (!paused)
         {
+            SondaManager.inserisciSonda("AutoFocus.OnPaused.if (!paused)");
             // Focus mode may be reset to default
             // Therefore, re-enable autofocus
             CameraDevice.Instance.SetFocusMode(

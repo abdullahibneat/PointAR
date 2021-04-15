@@ -11,5 +11,6 @@ public class playbackspeed : MonoBehaviour
     {
         // Set playback speed of "lift" animation to 0.25 (floating point)
         anim["lift"].speed = 0.25f;
+        SondaManager.inserisciSonda("playbackspeed.Start");
     }
 }
